@@ -31,7 +31,7 @@ function isValidCard(num) {
 	}
 
 // Multiplicar los números de las posiciones pares por 2:
-	for (var j = 0; j <= pares.length-1; j++) {
+	for (var j = 0; j <= pares.length; j++) {
 		var mult = pares[j]* 2;
 		if (mult >= 10) {
 			mult = (mult % 10) + (mult / 10);
@@ -39,14 +39,14 @@ function isValidCard(num) {
 	}
 
 // Sumar los números de las posiciones impares al total:	
-	var sum1=0;
+	var sum1 = 0;
 	for (var k = 0; k < mult.length; k++) {
-		sum1 = sum1 + mult[k];
+		sum1 += mult[k];
 	}
 
-	var sum2=0;
-	for (var l=0; l < impares.length; l++) {
-		sum2= sum2 + impares[l];
+	var sum2 = 0;
+	for (var l = 0; l < impares.length; l++) {
+		sum2 += impares[l];
 	}
 
 	result = sum1 + sum2;
