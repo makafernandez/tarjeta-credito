@@ -1,10 +1,9 @@
 # VALIDADOR DE TARJETAS DE CRÉDITO 
-			v.0.0.0.1
 
-##### Por Makarena Fernández
+![license](https://img.shields.io/github/release/missmakita/tarjeta-credito.svg) ![license](https://img.shields.io/github/license/missmakita/tarjeta-credito.svg) 
 
 ### DESCRIPCIÓN
-Crea una web que pida, por medio de un `prompt()`, el número de una tarjeta de crédito y confirme su validez según el algoritmo de Luhn.
+Plugin que permite validar la numeración de una tarjeta de crédito, basado en el algoritmo de Luhn.
 
 #### Consideraciones Específicas
 
@@ -46,7 +45,14 @@ Si `result MOD de 10 es igual 0 entonces TARJETA ES VÁLIDA, sino TARJETA NO ES 
 Ej:
 
 	input -> 4287465788753508
-	output -> TARJETA ES VÁLIDA
+	output -> La tarjeta de crédito es VÁLIDA
+
+
+:v:
+
+## Autor
+[Makarena Fernández](https://github.com/missmakita)put -> 4287465788753508
+	output -> La tarjeta de crédito es VÁLIDA
 
 
 ### DIAGRAMA DE FLUJO
@@ -54,5 +60,8 @@ Ej:
 ![Diagrama de flujo función isValidCard](diagrama-flujo-isvalidcard.jpg)
 
 :v:
+
+## Autor
+[Makarena Fernández](https://github.com/missmakita)
 
 
