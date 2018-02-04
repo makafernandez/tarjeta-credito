@@ -54,14 +54,3 @@ Ej:
 [Makarena Fernández](https://github.com/missmakita)put -> 4287465788753508
 	output -> La tarjeta de crédito es VÁLIDA
 
-
-### DIAGRAMA DE FLUJO
-
-![Diagrama de flujo función isValidCard](diagrama-flujo-isvalidcard.jpg)
-
-:v:
-
-## Autor
-[Makarena Fernández](https://github.com/missmakita)
-
-
