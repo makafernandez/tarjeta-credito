@@ -1,17 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Validador Tarjetas</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body>
-  <h1>Validador de Tarjetas de Crédito</h1>
 
-<<<<<<< HEAD
-	<!-- Scripts -->
-	<script type="text/javascript" src="lib/app.js"></script>	
-=======
-  <script type="text/javascript" src="app.js"></script> 
->>>>>>> update
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h1>Validador de Tarjetas de Crédito</h1>
+        <h5>Esta herramienta te permite validar el número de una tarjeta de crédito!</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l6">
+        <p>Basado en el Algoritmo de Luhn.</p>
+      </div>
+      <div class="col s12 l6">
+        <div class="input-field">
+          <i class="material-icons prefix">credit_card</i>
+          <input id="cardNumber" type="text" class="validate">
+          <label for="cardNumber">N° de tarjeta de crédito</label>
+          <div class="center-align">
+            <a id="validate" class="waves-effect waves-light btn">Validar</a>
+          </div>
+        </div>
+        <div id="response" class="center">
+          <!-- Respuesta a consulta va aquí -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="lib/app.js"></script>
 </body>
+
 </html>
