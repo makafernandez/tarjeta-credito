@@ -1,6 +1,6 @@
 # VALIDADOR DE TARJETAS DE CRÉDITO 
 
-![license](https://img.shields.io/github/release/missmakita/tarjeta-credito.svg) ![license](https://img.shields.io/github/license/missmakita/tarjeta-credito.svg) 
+![license](https://img.shields.io/github/release/missmakita/tarjeta-credito.svg)
 
 ### DESCRIPCIÓN
 Plugin que permite validar la numeración de una tarjeta de crédito, basado en el algoritmo de Luhn.
@@ -50,6 +50,6 @@ Ej:
 
 :v:
 
-## Autor
+## Autora
 [Makarena Fernández](https://github.com/missmakita)
 

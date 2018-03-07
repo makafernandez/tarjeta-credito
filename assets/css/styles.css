@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+section {
+  height: 100vh;
+}
+
+#description {
+  padding: 5rem 0;
+  height: 100%;
+}
+
+#validator {
+  height: 80vh;
+  padding: 5rem 0;
+}
+
+#logo {
+  height: 2rem;
+  width: 2rem;
+}
+
+#creditCard {
+  padding: 5rem 2rem;
+}
+
+#cardNumber {
+  font-size: 4rem;
+  font-stretch: extra-expanded;
+  height: 6rem;
+  letter-spacing: 1rem;
+}
+
+#cardNumber:focus {
+  border-bottom: 1px solid #00bcd4;
+  box-shadow: 0 1px 0 0 #00bcd4;
+}
+
+.prefix.active {
+  color: #00bcd4!important;
+}
+
+label.active {
+  color: #00bcd4!important;
+}
+
+@media only screen and (max-width: 450px) {
+  #cardNumber {
+    font-size: 1.2rem;
+    font-stretch: expanded;
+    height: 3rem;
+    letter-spacing: 0.3rem;
+    font-weight: 500
+  }
+}
+
+#response {
+    margin: 2rem 0;
+}

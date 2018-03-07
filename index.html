@@ -7,36 +7,80 @@
   <title>Validador Tarjetas</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col s12">
-        <h1>Validador de Tarjetas de Crédito</h1>
-        <h5>Esta herramienta te permite validar el número de una tarjeta de crédito!</h5>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 l6">
-        <p>Basado en el Algoritmo de Luhn.</p>
-      </div>
-      <div class="col s12 l6">
-        <div class="input-field">
-          <i class="material-icons prefix">credit_card</i>
-          <input id="cardNumber" type="text" class="validate">
-          <label for="cardNumber">N° de tarjeta de crédito</label>
-          <div class="center-align">
-            <a id="validate" class="waves-effect waves-light btn">Validar</a>
+  <main>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center-align">
+            <div>
+              <span id="logo"><img class="responsive-img" src="assets/img/Copia de logo.png" alt=""></span>
+              <h1>Validador de tarjetas bancarias</h1>
+            </div>
+            <h5>Esta herramienta te permite validar si el número de una tarjeta de crédito es válido</h5>
           </div>
         </div>
-        <div id="response" class="center">
-          <!-- Respuesta a consulta va aquí -->
+      </div>
+    </section>
+    <section id="description" class="yellow lighten-2">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l4 center-align">
+            <p class="flow-text grey-text text-darken-1">
+              Su creador fue Hans Peter Luhn, un científico de IBM y su uso ha sido tan extendido que desde que fuera creado hoy controla la creación y validación de todos los plasticos que se otorgan a los tarjetahabientes de todo el mundo.
+            </p>
+          </div>
+          <div class="col s12 l4 center-align">
+            <div id="creditCard" class="center">
+              <img class="responsive-img" src="assets/img/credit-card-2.png" alt="">
+            </div>
+          </div>
+          <div class="col s12 l4 center-align">
+            <p class="flow-text grey-text text-darken-1">
+              Este algoritmo es muy simple, nos dice que dada un número que contenga solamente dígitos [0-9], una tarjeta de crédito es válida si y solo si, obteniendo la reversa de este número, y la suma sus dígitos debe ser un múltiplo de 10, es decir que la suma módulo 10 debe ser igual a cero.
+            </p>  
+          </div>
         </div>
       </div>
+    </section>
+    <section id="validator">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <p class="flow-text grey-text text-darken-1">
+              La calculadora a continuación procesa la suma de verificación de Luhn para la secuencia de dígitos ingresada. La secuencia se considera válida si la suma de verificación con mod 10 es igual a cero.
+            </p> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 l10 offset-l1">
+            <form id="form" class="input-field">
+              <i class="material-icons prefix">credit_card</i>
+              <input id="cardNumber" type="text" class="validate tooltipped center-align" data-position="top" data-delay="50" data-tooltip="Ingresa un número de tarjeta de crédito para validar">
+              <label for="cardNumber">N° de tarjeta de crédito</label>
+              <div class="center-align">
+                <a id="validate" class="waves-effect waves-light btn-large cyan">Validar</a>
+              </div>
+            </form>
+            <div id="response" class="center-align">
+              <!-- Respuesta a consulta va aquí -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer cyan lighten-4">
+    <div class="footer-copyright">
+      <div class="container cyan-text">
+          Copyright © 2017 Makarena Fernández Lavín
+        <a class="cyan-text right" href="#!">Github</a>
+      </div>
     </div>
-  </div>
+  </footer>
   <!-- Scripts -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
